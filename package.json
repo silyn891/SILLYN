@@ -1,0 +1,32 @@
+{
+  "name": "sillyn-gestionale",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "vinext start",
+    "deploy": "pnpm dlx @vinext/cloudflare deploy",
+    "db:create": "wrangler d1 create sillyn-db",
+    "r2:create": "wrangler r2 bucket create sillyn-files",
+    "db:migrate:local": "wrangler d1 migrations apply sillyn-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply sillyn-db --remote",
+    "cf:types": "cf workers types"
+  },
+  "dependencies": {
+    "@vinext/cloudflare": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vinext": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "@cloudflare/vite-plugin": "latest",
+    "@types/node": "latest",
+    "wrangler": "latest",
+    "cf": "latest"
+  }
+}

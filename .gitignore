@@ -1,0 +1,8 @@
+node_modules/
+.vinext/
+.cloudflare/
+.wrangler/
+dist/
+.env*
+!.env.example
+worker-configuration.d.ts
