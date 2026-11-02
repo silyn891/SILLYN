@@ -1,0 +1,17 @@
+{
+  "name": "SILLYN — Gestionale personale e business",
+  "short_name": "SILLYN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "description": "Il tuo spazio personale e business, organizzato in un unico posto.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
